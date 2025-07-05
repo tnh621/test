@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+/* 日历外层背景为浅灰色 */
+.calendar-panel-bg {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 12px 0;
+}
+
+/* 选中日期底色为紫罗兰色（兼容 antd v4/v5） */
+.ant-picker-calendar .ant-picker-cell-selected .ant-picker-calendar-date,
+.ant-picker-calendar .ant-picker-cell-selected .ant-picker-calendar-date-today {
+  background: #8F5CFF !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+/* 事件详情区背景为白色，圆角阴影 */
+.calendar-event-detail {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 12px 16px;
+}
